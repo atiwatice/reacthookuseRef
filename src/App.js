@@ -3,6 +3,7 @@ import "./App.css";
 import ModalTest from "./ModelTest";
 import "antd/dist/antd.min.css";
 import React ,{ useState, useRef } from "react";
+import Counter from "./Counter";
 function App() {
   const modalRef = useRef();
 
@@ -22,7 +23,9 @@ function App() {
   return (
     <div className="App">
 
-      
+      <Counter/>
+      <br/>
+      <br/>
       <button onClick={openModal}>Open Modal</button>
       <ModalTest ref={modalRef}>
         <h1>Modal Header</h1>
